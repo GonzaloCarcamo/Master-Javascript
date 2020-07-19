@@ -4,24 +4,32 @@
 
 // Es una agrupación reutilizable de un conjunto de instrucciones.
 
+function porConsola(numero1, numero2) {
+    console.log("La suma es " + (numero1+numero2));
+    console.log("La rest es " + (numero1-numero2));
+    console.log("La mult es " + (numero1*numero2));
+    console.log("La divi es " + (numero1/numero2));
+    console.log("----------------------------------");
+}
+
+function porPantalla(numero1, numero2) {
+    document.write("La suma es " + (numero1+numero2) + "<br>");
+    document.write("La rest es " + (numero1-numero2) + "<br>");
+    document.write("La mult es " + (numero1*numero2) + "<br>");
+    document.write("La divi es " + (numero1/numero2) + "<br>");
+    document.write("----------------------------------");
+}
+
 function calculadora(numero1, numero2, mostrar = false){
 
     if(mostrar == false){
-        console.log("La suma es " + (numero1+numero2));
-        console.log("La rest es " + (numero1-numero2));
-        console.log("La mult es " + (numero1*numero2));
-        console.log("La divi es " + (numero1/numero2));
-        console.log("----------------------------------");
+        porConsola(numero1, numero2);
         
     }else{
-        document.write("La suma es " + (numero1+numero2) + "<br>");
-        document.write("La rest es " + (numero1-numero2) + "<br>");
-        document.write("La mult es " + (numero1*numero2) + "<br>");
-        document.write("La divi es " + (numero1/numero2) + "<br>");
-        document.write("----------------------------------");
+        porPantalla(numero1, numero2);
     }
         
-    //return "Probando las funciones";
+    return true;
 }
 
 // Invocar o llamar a la función
