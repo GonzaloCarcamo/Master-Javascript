@@ -24,3 +24,14 @@ function (dato) {
 });
 
 
+// Arros Function: la palabra function se reemplaza por =>
+// Además podemos quitar los paréntesis del parámetro, siempre y cuando sea sólo uno.
+// Es una forma resumida y cómodo de generar funciones de callback
+
+sumame(5, 7, dato => {
+    console.log("La suma es: " + dato);
+},
+dato => {
+    console.log("La suma por dos es: " + (dato*2));
+});
+
