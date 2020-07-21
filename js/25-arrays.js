@@ -43,3 +43,31 @@ lenguajes.forEach((elemento, index, arr) => {
 
 document.write("</ul>");
 
+
+// con for in
+
+document.write("<h1>Lenguajes de Programación 2020</h1>");
+document.write("<ul>");
+
+for(let lenguaje in lenguajes){
+    document.write("<li>" + lenguajes[lenguaje] + "</li>");
+}
+
+document.write("</ul>");
+
+// Búsquedas en un array
+
+var precios = [10, 20, 500, 302];
+
+var busqueda = lenguajes.find(function(lenguaje){
+    return lenguaje == "PHP"
+});
+
+// Búsqueda como arrow
+
+var busqueda2 = lenguajes.find(lenguaje => lenguaje == "Rust");
+
+// con findIndex me permite encontrar el índice donde se encuentra el elemento.
+
+var busqueda3 = precios.some(precio => precio >= 100);
+

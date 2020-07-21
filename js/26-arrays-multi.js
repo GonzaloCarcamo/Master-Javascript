@@ -31,5 +31,22 @@ if(indice > -1){
 
 var peliculas_string = peliculas.join();
 
+var cadena = "texto1, texto2, texto3";
+
+var cadena_array = cadena.split(", ");
+
 console.log(peliculas_string);
+console.log(cadena_array);
+
+
+// Ordenar arrays
+
+peliculas.sort(); // Ordenar ABC o numérico
+
+console.log(peliculas);
+
+peliculas.reverse(); 
+
+console.log(peliculas);
+
 
